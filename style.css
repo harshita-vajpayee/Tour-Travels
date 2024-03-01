@@ -218,7 +218,8 @@
         }
         
         .aboutus hr,
-        .faqs hr {
+        .faqs hr,
+        .routes hr {
             width: 10%;
         }
         
@@ -337,7 +338,8 @@
             color: #5c0b1c;
         }
         
-        .types {
+        .types,
+        .routes {
             margin: 30px;
             margin-top: 60px;
             text-align: center;
@@ -438,6 +440,110 @@
             width: 80%;
             font-size: 18px;
             border: 0.2px solid black;
+        }
+        
+        .footer,
+        .routebox {
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .footer {
+            background-color: #741125;
+            color: #ddd;
+        }
+        
+        .footer h2 {
+            color: #ddd;
+        }
+        
+        .routebox h3 {
+            color: #741125;
+            padding: 10px;
+            text-align: left;
+            font-size: 28px;
+        }
+        
+        .routebox p {
+            padding: 5px;
+            text-align: left;
+            font-size: 20px;
+        }
+        
+        .col1,
+        .col2,
+        .col3,
+        .address,
+        .map,
+        .form {
+            flex: 1;
+            margin: 20px;
+            gap: 30px;
+        }
+        
+        .address p {
+            padding-left: 10px;
+        }
+        
+        .form {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding-bottom: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        
+        .map {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .map img {
+            width: 400px;
+            height: auto;
         }
         /*Responsive*/
         
