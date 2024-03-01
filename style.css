@@ -30,7 +30,7 @@
 }
 
 .nav-links a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin-left: 20px;
     font-size: 18px;
@@ -42,8 +42,8 @@
 }
 
 .nav-button {
-    background-color: rgb(214, 214, 1);
-    color: rgba(255, 255, 255, 0.74);
+    background-color: rgb(219, 187, 3);
+    color: rgb(255, 255, 255);
     border: 2px solid rgb(221, 221, 20);
     border-radius: 4px;
     padding: 5px 10px;
@@ -141,4 +141,78 @@ body {
 .text-content p {
     padding: 20px;
     font-size: 20px;
+}
+
+.text-content button {
+    margin-top: 20px;
+    width: 150px;
+    margin-left: 30px;
+    color: #ffffff;
+}
+
+.about {
+    margin-top: 50px;
+    text-align: center;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h1 {
+    font-weight: bold;
+    padding: 20px;
+}
+
+hr {
+    border: 2px solid rgb(219, 219, 4);
+    width: 40%;
+    margin: auto;
+}
+
+.about .text-content {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 20px;
+    max-width: 500px;
+    text-align: justify;
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width: 768px) {
+    .nav-links,
+    .dropdown-content {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .nav-links a,
+    .dropdown-content a {
+        display: block;
+        text-align: center;
+    }
+    .nav-button {
+        width: 100%;
+        margin-right: 0;
+        margin: 0;
+    }
+    .icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 20px;
+    }
+    .image-content img {
+        width: 50%;
+        /* Keeps image aspect ratio */
+        height: auto;
+        /* Adjust the height as needed, or use 'auto' to maintain aspect ratio */
+        /* Limits image size to not take more than half the container */
+    }
 }
