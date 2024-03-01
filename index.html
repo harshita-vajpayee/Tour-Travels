@@ -78,7 +78,7 @@
             <button class="btn">Know More</button>
         </div>
         <div class="features">
-            <h1>Taxi & Cab Services in Maharashtra</h1>
+            <h1>Taxi & Cab Services in Mumbai & Maharashtra</h1>
             <hr>
             <div class="grid-container">
                 <div class="grid-item">
@@ -137,26 +137,25 @@
         </div>
     </div>
 </body>
-
 <script>
-    const sliderContainer = document.getElementById('slider-container ');
-    const prevBtn = document.getElementById('prevBtn ');
-    const nextBtn = document.getElementById('nextBtn ');
+    const sliderContainer = document.getElementById('slider-container');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
 
-    prevBtn.addEventListener('click ', () => {
-        moveCard('prev ');
+    prevBtn.addEventListener('click', () => {
+        moveCard('prev');
     });
 
-    nextBtn.addEventListener('click ', () => {
-        moveCard('next ');
+    nextBtn.addEventListener('click', () => {
+        moveCard('next');
     });
 
     function moveCard(direction) {
-        if (direction === 'next ') {
+        if (direction === 'next') {
             const firstCard = sliderContainer.children[0];
             sliderContainer.appendChild(firstCard.cloneNode(true));
             firstCard.remove();
-        } else if (direction === 'prev ') {
+        } else if (direction === 'prev') {
             const lastCard = sliderContainer.children[sliderContainer.children.length - 1];
             sliderContainer.insertBefore(lastCard.cloneNode(true), sliderContainer.firstChild);
             lastCard.remove();
@@ -164,7 +163,7 @@
     }
 
     // Optional: Commented out to prevent automatic sliding when manually navigating
-    setInterval(() => moveCard('next '), 5000);
+    setInterval(() => moveCard('next'), 3000);
 </script>
 
 
