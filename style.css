@@ -638,5 +638,6 @@
             .reviews {
                 padding: 0;
                 margin: 0;
+                width: 400px;
             }
         }
