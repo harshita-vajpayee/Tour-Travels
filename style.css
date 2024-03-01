@@ -395,10 +395,12 @@
         
         .faqbox {
             margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         
         .collapsible {
-            margin-left: 20px;
             background-color: white;
             color: black;
             cursor: pointer;
@@ -421,7 +423,6 @@
             content: '\002B';
             color: #741125;
             float: right;
-            margin-left: 5px;
         }
         
         .active:after {
@@ -429,8 +430,6 @@
         }
         
         .content {
-            padding-left: 15px;
-            margin-left: 20px;
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.2s ease-out;
@@ -438,7 +437,7 @@
             color: black;
             width: 80%;
             font-size: 18px;
-            border: 1px solid black;
+            border: 0.2px solid black;
         }
         /*Responsive*/
         
