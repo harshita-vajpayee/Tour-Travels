@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> Imandar Tours and Travels</title>
 </head>
@@ -96,8 +98,64 @@
             </div>
             <button class="btn">Book Now</button>
         </div>
+        <div class="reviews">
+            <h1>Reviews from Our Travellers</h1>
+            <hr>
+            <div class="slider-wrapper">
+                <div id="slider-container">
+                    <div class="card"><i class="fa fa-quote-left" style="font-size:24px;color: rgb(216, 216, 17);"></i>&nbsp;Good service, well maintained car. Car is clean, driver is good. He does not charge any extra money for increasing 12km.
+                        <p>-Abdul</p>
+                    </div>
+                    <div class="card"><i class="fa fa-quote-left" style="font-size:24px;color: rgb(216, 216, 17);"></i>&nbsp;What a great person is Mr Malik is very helpful, we had a very enjoyable drive our driver kamlesh drove very safely and came 10 min before to pick
+                        us up. This will be my future choice for travel all the time.
+                        <p>-User</p>
+                    </div>
+                    <div class="card"><i class="fa fa-quote-left" style="font-size:24px;color: rgb(216, 216, 17);"></i>&nbsp;What a great person is Mr Malik is very helpful, we had a very enjoyable drive our driver kamlesh drove very safely and came 10 min before to pick
+                        us up. This will be my future choice for travel all the time.
+                        <p>-Nishar Khan</p>
+                    </div>
+                    <div class="card"><i class="fa fa-quote-left" style="font-size:24px;color: rgb(216, 216, 17);"></i>&nbsp;Very good services provided driver on time and safe driving
+                        <p>-Majid</p>
+                    </div>
+                    <!-- Add as many cards as you like -->
+                </div>
+                <button id="prevBtn"><i class='far fa-arrow-alt-circle-left' style="font-size: 30px;"></i></button>
+                <button id="nextBtn"><i class='far fa-arrow-alt-circle-right' style="font-size: 30px;"></i></button>
+            </div>
+
+        </div>
     </div>
 </body>
+
+<script>
+    const sliderContainer = document.getElementById('slider-container');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    prevBtn.addEventListener('click', () => {
+        moveCard('prev');
+    });
+
+    nextBtn.addEventListener('click', () => {
+        moveCard('next');
+    });
+
+    function moveCard(direction) {
+        if (direction === 'next') {
+            const firstCard = sliderContainer.children[0];
+            sliderContainer.appendChild(firstCard.cloneNode(true));
+            firstCard.remove();
+        } else if (direction === 'prev') {
+            const lastCard = sliderContainer.children[sliderContainer.children.length - 1];
+            sliderContainer.insertBefore(lastCard.cloneNode(true), sliderContainer.firstChild);
+            lastCard.remove();
+        }
+    }
+
+    // Optional: Commented out to prevent automatic sliding when manually navigating
+    setInterval(() => moveCard('next'), 5000);
+</script>
+
 
 
 </html>
