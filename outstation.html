@@ -9,13 +9,40 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> Imandar Tours and Travels</title>
+    <style>
+        h1 {
+            color: #741125;
+            text-align: center;
+        }
+        
+        .row {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            margin-top: 20px;
+            text-align: center;
+            justify-content: center;
+        }
+        
+        .row .heading {
+            padding-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #741125;
+        }
+        
+        .text {
+            padding: 20px;
+            font-size: 24px;
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="logo"><img src="./img/product-jpeg.jpg"> </div>
         <div class="nav-links">
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
             <a href="#aboutus">About Us</a>
             <div class="dropdown">
                 <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
@@ -38,29 +65,70 @@
     <div class="container" style="margin: 60px;">
 
         <h1>Taxi & Cab Services in Mumbai & Maharashtra</h1>
-        <div class="grid-item">
-            <img src="./img/download (3).png" alt="Image 2">
-            <p><a>Outstation</a></p>
+        <div class="row">
+            <p class="heading">Outstation Travel</p>
+            <div class="grid-item">
+                <img src="./img/download (3).png" alt="Image 2">
+                <p><a>Outstation</a></p>
+            </div>
         </div>
-        <p style="padding-top: 20px;font-size: 24px;font-weight: bold;">Outstation Travel
 
-            <p style="padding: 20px;font-size: 24px;"> Welcome to Mumbai: The City of Dreams Mumbai, formerly known as Bombay, is a vibrant metropolis and the financial, commercial, and entertainment capital of India. This bustling city is situated on the west coast of India and is famous for
-                its rich cultural heritage, dynamic lifestyle, and diverse population.</p>
-            <p style="padding: 20px;font-size: 24px;">Key Highlights:
-                <ol style="font-size: 24px;padding: 20px;">
-                    <li>Gateway to india</li>
-                    <li>Bollywood (Film city)</li>
-                    <li>Shree Siddhivinayak Temple</li>
-                    <li>Haji Ali</li>
-                    <li>Marine Lines</li>
-                    <li>Juhu Chaupati</li>
-                    <li>Mahalakshmi Temple e.t.c</li>
-                </ol>
-            </p>
-
-            <p style="padding: 20px;font-size: 24px;">
-                Mumbai is more than just a city; it 's an experience. Whether you're exploring its historical landmarks, indulging in its culinary delights, or experiencing its vibrant nightlife, Mumbai never fails to leave a lasting impression on its visitors. </p>
     </div>
+    <div class="footer" id="footer">
+        <div class="address">
+            <h2>
+                <u>Our Office address</u></h2>
+            <p>Prayag Chawl, Committee Kamraj Nagar, </p>
+            <p>Express Highway, Ghatkopar East,</p>
+            <p> Mumbai - 400077 (Near Modal English School)</p>
+            <h2>
+                <u>Our Office hours</u></h2>
+
+            <p>Operational 24*7</p>
+            <h2><u>Contact Us</u></h2>
+            <p><i class="fa fa-phone" style="font-size:18px;color: white;"></i>&nbsp;+919137372136</p>
+            <p><i class="fa fa-phone" style="font-size:18px;color: white;"></i>&nbsp;+919820267802</p>
+            <p><i class="fa fa-envelope" style="font-size:18px;color: white;"></i>&nbsp;Khan.nishar6313L@gmail.com</p>
+        </div>
+        <div class="form">
+            <h2>
+                <u>Get in Touch</u></h2>
+            <form id="contact-form">
+
+                <div class="form-group">
+
+                    <input type="text" placeholder="Your name" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+
+                    <input type="email" placeholder="Your email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+
+                    <input type="tel" id="phone" placeholder="Your phone number" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="map">
+            <img src="./img/Screenshot (593).png">
+            <img src="./img/Screenshot (592).png" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <h3>Copyright &copy; Upturn Solutions</h3>
+        <div class="footer-menu">
+            <a href="#home">Home</a>
+            <a href="#">Cookies Policy</a>
+            <a href="#">Terms Of Service</a>
+            <a href="#">Support</a>
+        </div>
+
+    </footer>
 </body>
 
 </html>

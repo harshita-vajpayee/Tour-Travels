@@ -632,4 +632,11 @@
                 /* Adjust the height as needed, or use 'auto' to maintain aspect ratio */
                 /* Limits image size to not take more than half the container */
             }
+            .about,
+            .aboutus,
+            .features,
+            .reviews {
+                padding: 0;
+                margin: 0;
+            }
         }

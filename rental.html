@@ -9,13 +9,40 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> Imandar Tours and Travels</title>
+    <style>
+        h1 {
+            color: #741125;
+            text-align: center;
+        }
+        
+        .row {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            margin-top: 20px;
+            text-align: center;
+            justify-content: center;
+        }
+        
+        .row .heading {
+            padding-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #741125;
+        }
+        
+        .text {
+            padding: 20px;
+            font-size: 24px;
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="logo"><img src="./img/product-jpeg.jpg"> </div>
         <div class="nav-links">
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
             <a href="#aboutus">About Us</a>
             <div class="dropdown">
                 <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
@@ -38,17 +65,19 @@
     <div class="container" style="margin: 60px;">
 
         <h1>Taxi & Cab Services in Mumbai & Maharashtra</h1>
-        <div class="grid-item">
-            <img src="./img/2389173.png" alt="Image 5">
-            <p><a href="rental.html">Rental Cars</a></p>
+        <div class="row">
+            <p class="heading">Corporate Car Rental</p>
+            <div class="grid-item">
+                <img src="./img/2389173.png" alt="Image 5">
+                <p><a href="rental.html">Rental Cars</a></p>
+            </div>
         </div>
-        <p style="padding-top: 20px;font-size: 24px;font-weight: bold;">Corporate Car Rental</p>
 
-        <p style="padding: 20px;font-size: 24px;">Elevate your business travel experience with our premium corporate car rental services in Mumbai. Designed to meet the diverse needs of modern businesses, we offer seamless transportation solutions tailored to your requirements.</p>
+        <p class="text">Elevate your business travel experience with our premium corporate car rental services in Mumbai. Designed to meet the diverse needs of modern businesses, we offer seamless transportation solutions tailored to your requirements.</p>
 
-        <p style="padding: 20px;font-size: 24px;">
+        <p class="text">
             Our Services Include:
-            <ul style="font-size: 24px;padding: 20px;">
+            <ul class="text">
                 <li>Fleet of Luxury Vehicles</li>
                 <li>Professional Chauffeurs</li>
                 <li>Customized Travel Plans</li>
@@ -58,13 +87,68 @@
                 <li>Competitive Pricing</li>
             </ul>
         </p>
-        <p style="padding: 20px;font-size: 24px;">
+        <p class="text">
             Experience the convenience, reliability, and luxury of our corporate car rental services in Mumbai. Whether you're attending important meetings, entertaining clients, or exploring the city, we're committed to providing you with unparalleled comfort and
             convenience every step of the way.
         </p>
-        <p style="padding: 20px;font-size: 24px;">
+        <p class="text">
             Book your corporate car rental with us today and elevate your business travel experience in Mumbai. Let us take care of the transportation, so you can focus on what matters most—your business success. </p>
     </div>
+    <div class="footer" id="footer">
+        <div class="address">
+            <h2>
+                <u>Our Office address</u></h2>
+            <p>Prayag Chawl, Committee Kamraj Nagar, </p>
+            <p>Express Highway, Ghatkopar East,</p>
+            <p> Mumbai - 400077 (Near Modal English School)</p>
+            <h2>
+                <u>Our Office hours</u></h2>
+
+            <p>Operational 24*7</p>
+            <h2><u>Contact Us</u></h2>
+            <p><i class="fa fa-phone" style="font-size:18px;color: white;"></i>&nbsp;+919137372136</p>
+            <p><i class="fa fa-phone" style="font-size:18px;color: white;"></i>&nbsp;+919820267802</p>
+            <p><i class="fa fa-envelope" style="font-size:18px;color: white;"></i>&nbsp;Khan.nishar6313L@gmail.com</p>
+        </div>
+        <div class="form">
+            <h2>
+                <u>Get in Touch</u></h2>
+            <form id="contact-form">
+
+                <div class="form-group">
+
+                    <input type="text" placeholder="Your name" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+
+                    <input type="email" placeholder="Your email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+
+                    <input type="tel" id="phone" placeholder="Your phone number" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="map">
+            <img src="./img/Screenshot (593).png">
+            <img src="./img/Screenshot (592).png" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <h3>Copyright &copy; Upturn Solutions</h3>
+        <div class="footer-menu">
+            <a href="#home">Home</a>
+            <a href="#">Cookies Policy</a>
+            <a href="#">Terms Of Service</a>
+            <a href="#">Support</a>
+        </div>
+
+    </footer>
 </body>
 
 </html>

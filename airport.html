@@ -8,14 +8,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title> Imandar Tours and Travels</title>
+    <title> Imandar Tours and Travels| Features</title>
+    <style>
+        h1 {
+            color: #741125;
+            text-align: center;
+        }
+        
+        .row {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            margin-top: 20px;
+            text-align: center;
+            justify-content: center;
+        }
+        
+        .row .heading {
+            padding-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #741125;
+        }
+        
+        .text {
+            padding: 20px;
+            font-size: 24px;
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="logo"><img src="./img/product-jpeg.jpg"> </div>
         <div class="nav-links">
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
             <a href="#aboutus">About Us</a>
             <div class="dropdown">
                 <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
@@ -38,15 +65,17 @@
     <div class="container" style="margin: 60px;">
 
         <h1>Taxi & Cab Services in Mumbai & Maharashtra</h1>
-        <div class="grid-item">
-            <img src="./img/images (1).png" alt="Image 3">
-            <p><a href="airport.html">Airport Transfer</a></p>
+        <div class="row">
+            <p class="heading">Airport transfer</p>
+            <div class="grid-item">
+                <img src="./img/images (1).png" alt="Image 3">
+                <p><a href="airport.html">Airport Transfer</a></p>
+            </div>
         </div>
-        <p style="padding-top: 20px;font-size: 24px;font-weight: bold;">Airport transfer</p>
 
-        <p style="padding: 20px;font-size: 24px;">Mumbai, the vibrant gateway to India! Make your arrival and departure hassle-free with our reliable airport transfer services. Whether you're a business traveler or a tourist, we ensure a seamless journey to and from Mumbai's bustling airports.</p>
-        <p style="padding: 20px;font-size: 24px;">Our Services Include:
-            <ol style="font-size: 24px;padding: 20px;">
+        <p class="text">Mumbai, the vibrant gateway to India! Make your arrival and departure hassle-free with our reliable airport transfer services. Whether you're a business traveler or a tourist, we ensure a seamless journey to and from Mumbai's bustling airports.</p>
+        <p class="text">Our Services Include:
+            <ol class="text">
                 <li>Professional Chauffeurs</li>
                 <li>Wide Range of Vehicles</li>
                 <li>24/7 Availability</li>
@@ -56,17 +85,72 @@
 
             </ol>
         </p>
-        <p style="padding: 20px;font-size: 24px;">
+        <p class="text">
             Whether you're arriving at Chhatrapati Shivaji Maharaj International Airport or departing from Mumbai to your next destination, trust our airport transfer services to provide a smooth and stress-free journey. Sit back, relax, and let us take care of your
             transportation needs while you focus on enjoying your time in Mumbai.
 
         </p>
-        <p style="padding: 20px;font-size: 24px;">
+        <p class="text">
             Book your airport transfer with us today and experience the convenience and reliability of our premium transportation services. Welcome to Mumbai—let's make your journey unforgettable!
 
         </p>
 
     </div>
+    <div class="footer" id="footer">
+        <div class="address">
+            <h2>
+                <u>Our Office address</u></h2>
+            <p>Prayag Chawl, Committee Kamraj Nagar, </p>
+            <p>Express Highway, Ghatkopar East,</p>
+            <p> Mumbai - 400077 (Near Modal English School)</p>
+            <h2>
+                <u>Our Office hours</u></h2>
+
+            <p>Operational 24*7</p>
+            <h2><u>Contact Us</u></h2>
+            <p><i class="fa fa-phone" style="font-size:18px;color: white;"></i>&nbsp;+919137372136</p>
+            <p><i class="fa fa-phone" style="font-size:18px;color: white;"></i>&nbsp;+919820267802</p>
+            <p><i class="fa fa-envelope" style="font-size:18px;color: white;"></i>&nbsp;Khan.nishar6313L@gmail.com</p>
+        </div>
+        <div class="form">
+            <h2>
+                <u>Get in Touch</u></h2>
+            <form id="contact-form">
+
+                <div class="form-group">
+
+                    <input type="text" placeholder="Your name" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+
+                    <input type="email" placeholder="Your email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+
+                    <input type="tel" id="phone" placeholder="Your phone number" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="map">
+            <img src="./img/Screenshot (593).png">
+            <img src="./img/Screenshot (592).png" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <h3>Copyright &copy; Upturn Solutions</h3>
+        <div class="footer-menu">
+            <a href="#home">Home</a>
+            <a href="#">Cookies Policy</a>
+            <a href="#">Terms Of Service</a>
+            <a href="#">Support</a>
+        </div>
+
+    </footer>
 </body>
 
 </html>
