@@ -631,7 +631,7 @@ footer {
         padding: 20px;
     }
     .image-content img {
-        width: 50%;
+        width: 70%;
         /* Keeps image aspect ratio */
         height: auto;
         /* Adjust the height as needed, or use 'auto' to maintain aspect ratio */
