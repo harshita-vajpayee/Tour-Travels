@@ -6,6 +6,10 @@
             padding: 0;
         }
         
+        html {
+            scroll-behavior: smooth;
+        }
+        
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -242,7 +246,8 @@
         h2,
         .reviews h1,
         .types h1,
-        .faqs h1 {
+        .faqs h1,
+        .routes h1 {
             padding: 10px;
             margin-top: 20px;
             color: #5c0b1c;
@@ -550,6 +555,48 @@
         .map img {
             width: 400px;
             height: auto;
+        }
+        
+        footer {
+            background-color: #741125;
+            color: #ddd;
+            bottom: 0;
+            width: 95.5%;
+            font-size: 20px;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            gap: 350px;
+            padding-left: 40px;
+        }
+        
+        .copyright {
+            padding: 0.3em 1em;
+            flex: 1;
+        }
+        
+        .footer-menu {
+            float: left;
+            margin-top: 10px;
+            background-color: #741125;
+            flex: 1;
+            gap: 10px;
+        }
+        
+        .footer-menu a {
+            color: #cfd2d6;
+            padding: 6px;
+            text-decoration: none;
+        }
+        
+        .footer-menu a:hover {
+            color: #c7940a;
+        }
+        
+        .copyright p {
+            font-size: 0.9em;
+            text-align: right;
         }
         /*Responsive*/
         

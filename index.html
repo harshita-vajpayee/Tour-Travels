@@ -40,7 +40,7 @@
             <div class="text-content">
                 <h1>Welcome to Imandar Tour & Travels</h1>
                 <p>Best Taxi service in Mumbai and Maharashtra.</p>
-                <button class="nav-button">Book Now</button>
+                <button class="nav-button" id="booknw">Book Now</button>
             </div>
             <div class="image-content">
                 <img src="./img/car-rental-india-800x445.webp_2024-03-01T08_19_35.733Z_output_0.jpeg" alt="Descriptive Text for Image">
@@ -55,7 +55,7 @@
                 <p>Explore Mumbai and Maharashtra hassle-free with our trusted taxi service. Book your ride today and experience the difference!</p>
 
             </div>
-            <button class="btn">Book Now</button>
+            <button class="btn" id="book">Book Now</button>
         </div>
         <div class="aboutus" id="aboutus">
             <h1>ABOUT US</h1>
@@ -91,28 +91,30 @@
                 </div>
                 <div class="grid-item">
                     <img src="./img/download (3).png" alt="Image 2">
-                    <p><a>Outstation</a></p>
+                    <p>
+                        <a href="outstation.html">Outstation</a>
+                    </p>
                 </div>
                 <div class="grid-item">
                     <img src="./img/images (1).png" alt="Image 3">
-                    <p><a>Airport Transfer</a></p>
+                    <p><a href="airport.html">Airport Transfer</a></p>
                 </div>
                 <div class="grid-item">
                     <img src="./img/6491292.png" alt="Image 4">
-                    <p><a>Cabs for Weddings & Events</a>
+                    <p><a href="wedding.html">Cabs for Weddings & Events</a>
                     </p>
                 </div>
                 <div class="grid-item">
                     <img src="./img/2389173.png" alt="Image 5">
-                    <p><a>Rental Cars</a></p>
+                    <p><a href="rental.html">Rental Cars</a></p>
                 </div>
                 <div class="grid-item">
                     <img src="./img/download (4).png" alt="Image 6">
-                    <p><a>Long time Lease</a></p>
+                    <p><a href="lease.html">Long time Lease</a></p>
                 </div>
 
             </div>
-            <button class="btn">Book Now</button>
+            <button class="btn" id="booknow">Book Now</button>
         </div>
         <div class="reviews" id="reviews">
             <h1>Reviews from Our Travellers</h1>
@@ -132,6 +134,15 @@
                     </div>
                     <div class="card"><i class="fa fa-quote-left" style="font-size:24px;color: rgb(216, 216, 17);"></i>&nbsp;Very good services provided driver on time and safe driving
                         <p>-Majid</p>
+                    </div>
+                    <div class="card"><i class="fa fa-quote-left" style="font-size:24px;color: rgb(216, 216, 17);"></i>&nbsp;Very nice cab good driving one number service..
+                        <p>-Malik</p>
+                    </div>
+                    <div class="card"><i class="fa fa-quote-left" style="font-size:24px;color: rgb(216, 216, 17);"></i>&nbsp;Very Reasonable and Ontime Service.
+                        <p>-Sudershan</p>
+                    </div>
+                    <div class="card"><i class="fa fa-quote-left" style="font-size:24px;color: rgb(216, 216, 17);"></i>&nbsp;Excellent service and on time delivery
+                        <p>-Shahnawaz Khan</p>
                     </div>
                     <!-- Add as many cards as you like -->
                 </div>
@@ -161,7 +172,7 @@
                     <p>Luxury Cars</p>
                 </div>
             </div>
-            <button class="btn">Book Now</button>
+            <button class="btn" id="bookn">Book Now</button>
         </div>
         <div class="faqs">
             <h1>FAQs</h1>
@@ -292,7 +303,16 @@
             </div>
         </div>
     </div>
-    <footer></footer>
+    <footer>
+        <h3>Copyright &copy; Upturn Solutions</h3>
+        <div class="footer-menu">
+            <a href="">Home</a>
+            <a href="">Cookies Policy</a>
+            <a href="">Terms Of Service</a>
+            <a href="">Support</a>
+        </div>
+
+    </footer>
 </body>
 <script>
     const sliderContainer = document.getElementById('slider-container');
@@ -350,6 +370,21 @@
             bttn.style.display = "block";
         }
     });
+
+    document.getElementById("book").onclick = function() {
+        location.href = "#footer";
+    };
+    document.getElementById("bookn").onclick = function() {
+        location.href = "#footer";
+    };
+    document.getElementById("booknow").onclick = function() {
+        location.href = "#footer";
+    };
+    document.getElementById("booknw").onclick = function() {
+        location.href = "#footer";
+    };
 </script>
+
+</html>t>
 
 </html>
