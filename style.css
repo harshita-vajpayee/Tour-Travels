@@ -638,6 +638,9 @@
             .reviews {
                 padding: 0;
                 margin: 0;
-                width: 400px;
+                max-width: 400px;
+            }
+            .navbar {
+                position: relative;
             }
         }
