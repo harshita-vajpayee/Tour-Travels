@@ -158,6 +158,51 @@
             </div>
             <button class="btn">Book Now</button>
         </div>
+        <div class="faqs">
+            <h1>FAQs</h1>
+            <hr>
+            <div class="faqbox">
+                <button class="collapsible"><b>1. How do I book a taxi in Mumbai and Maharashtra?</b></button>
+                <div class="content">
+                    <p style="padding-left: 10px;padding-right: 10px;"> Booking a taxi in Mumbai and Maharashtra is easy. Simply visit our website or Call or WhatsApp on 9137372136 & 9820267802 to make a booking in just a few clicks.</p>
+                </div>
+                <button class="collapsible"><b>2. What types of vehicles are available for booking?</b></button>
+                <div class="content">
+                    <p style="padding-left: 10px;padding-right: 10px;"> We offer a range of vehicles to suit your needs, including sedans, SUVs, and luxury cars. You can choose the vehicle type that best fits your requirements.</p>
+                </div>
+                <button class="collapsible"><b>3. Are your drivers experienced and professional?</b></button>
+                <div class="content">
+                    <p style="padding-left: 10px;padding-right: 10px;"> Yes, all our drivers are experienced professionals who are well-trained and licensed. They prioritize your safety and comfort throughout your journey.
+                    </p>
+                </div>
+                <button class="collapsible"><b>4. Can I book a taxi for outstation travel?
+            </b></button>
+                <div class="content">
+                    <p style="padding-left: 10px;padding-right: 10px;">Absolutely! You can book our taxis for outstation travel across Maharashtra and beyond. Simply specify your destination while booking, and we'll take care of the rest.
+                    </p>
+                </div>
+                <button class="collapsible"><b>5. How can I pay for my taxi ride?   
+            </b></button>
+                <div class="content">
+                    <p style="padding-left: 10px;padding-right: 10px;"> We offer multiple payment options including cash, credit/debit cards, and digital wallets for your convenience. Choose the option that suits you best.
+                    </p>
+                </div>
+                <button class="collapsible"><b>6. Is it possible to book a taxi in advance?
+                    </b></button>
+                <div class="content">
+                    <p style="padding-left: 10px;padding-right: 10px;"> Yes, you can book a taxi in advance through our website or call . Simply select your desired date and time, and we'll ensure a vehicle is ready for you.</p>
+                </div>
+                <button class="collapsible"><b>7. Do you offer round-the-clock service?
+                    </b></button>
+                <div class="content">
+                    <p style="padding-left: 10px;padding-right: 10px;"> Yes, we operate 24/7, so you can book a taxi anytime, day or night, and we'll be there to serve you.</p>
+                </div><button class="collapsible"><b>8. What sets your taxi service apart from others?
+                    </b></button>
+                <div class="content">
+                    <p style="padding-left: 10px;padding-right: 10px;"> We pride ourselves on our punctuality, professionalism, and commitment to customer satisfaction. With our reliable service and comfortable vehicles, your journey with us will always be a pleasant one.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <script>
@@ -189,6 +234,21 @@
     setInterval(() => moveCard('next'), 3000);
 </script>
 
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
 
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
 
 </html>
