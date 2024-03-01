@@ -601,7 +601,7 @@
         }
         /*Responsive*/
         
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 500px) {
             .nav-links,
             .dropdown-content {
                 width: 100%;
