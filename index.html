@@ -16,7 +16,7 @@
         <div class="logo"><img src="./img/product-jpeg.jpg"> </div>
         <div class="nav-links">
             <a href="#">Home</a>
-            <a href="#">About Us</a>
+            <a href="#aboutus">About Us</a>
             <div class="dropdown">
                 <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
                 <div class="dropdown-content">
@@ -29,9 +29,9 @@
                     <a href="#">Tour Package</a>
                 </div>
             </div>
-            <a href="#">Testimonials</a>
+            <a href="#reviews">Testimonials</a>
             <a href="#">Blogs</a>
-            <a href="#">Contact</a>
+            <a href="#footer">Contact</a>
         </div>
         <button class="nav-button"><i class="fa fa-phone" style="font-size:18px;color: white;"></i>+919137372136</button>
     </nav>
@@ -57,7 +57,7 @@
             </div>
             <button class="btn">Book Now</button>
         </div>
-        <div class="aboutus">
+        <div class="aboutus" id="aboutus">
             <h1>ABOUT US</h1>
             <hr>
             <h2>Who we are & why choose us ?</h2>
@@ -65,17 +65,21 @@
                 <p>With a mission of transforming long-distance commute into a memorable and enjoyable experience, Imandar Tour and Travels has been serving travellers across western and Central India over last 15+ years. In this time, Imandar Tour and Travels
                     has established it's name as The Best Cab Service in Mumbai ,& Maharastra & as well as The Best Cab service in Mumbai & Maharastra including Pune and Nagpur.
                 </p>
-                <p>True to it's stature, Imandar has always traveled an extra mile with the sole aim of customer satisfaction. Providing consumer centric services in the most economical prices, we are constantly innovating to fulfill all the local as well
-                    as outstation travel related needs of our clients & provide them with an ultimate experience that they look forward to.
-                </p>
-                <p>With a highly-experienced and trained fleet of drivers, we assure you top-notch quality and safety at all times. Imandar Cabs have a dedicated 24*7 customer care panel, which would be happy to be at your disposal at any instance.
-                </p>
-                <p>Our former and dedicated customer base is proof of our impeccably satisfactory service. We are justifiably proud of our record of providing highly rated 5-Star customer services, with an equally quick and responsive 1-hour turnaround time
-                    on almost every request.</p>
-                <p>With a vast experience of working with superior clientele including multiple Fortune 50 companies.</p>
+
+                <div id="hiddenContent" style="display: none;">
+                    <p>True to it's stature, Imandar has always traveled an extra mile with the sole aim of customer satisfaction. Providing consumer centric services in the most economical prices, we are constantly innovating to fulfill all the local as
+                        well as outstation travel related needs of our clients & provide them with an ultimate experience that they look forward to.
+                    </p>
+                    <p>With a highly-experienced and trained fleet of drivers, we assure you top-notch quality and safety at all times. Imandar Cabs have a dedicated 24*7 customer care panel, which would be happy to be at your disposal at any instance.
+                    </p>
+                    <p>Our former and dedicated customer base is proof of our impeccably satisfactory service. We are justifiably proud of our record of providing highly rated 5-Star customer services, with an equally quick and responsive 1-hour turnaround
+                        time on almost every request.</p>
+                    <p>With a vast experience of working with superior clientele including multiple Fortune 50 companies.</p>
+
+                </div>
 
             </div>
-            <button class="btn">Know More</button>
+            <button class="btn" id="showContentBtn">Know More</button>
         </div>
         <div class="features">
             <h1>Taxi & Cab Services in Mumbai & Maharashtra</h1>
@@ -83,33 +87,34 @@
             <div class="grid-container">
                 <div class="grid-item">
                     <img src="./img/grab-this-carefully-designed-icon-260nw-2316144921.jpg" alt="Image 1">
-                    <p>Local</p>
+                    <p><a href="local.html">Local</a></p>
                 </div>
                 <div class="grid-item">
                     <img src="./img/download (3).png" alt="Image 2">
-                    <p>Outstation</p>
+                    <p><a>Outstation</a></p>
                 </div>
                 <div class="grid-item">
                     <img src="./img/images (1).png" alt="Image 3">
-                    <p>Airport Transfer</p>
+                    <p><a>Airport Transfer</a></p>
                 </div>
                 <div class="grid-item">
                     <img src="./img/6491292.png" alt="Image 4">
-                    <p>Cabs for Weddings & Events</p>
+                    <p><a>Cabs for Weddings & Events</a>
+                    </p>
                 </div>
                 <div class="grid-item">
                     <img src="./img/2389173.png" alt="Image 5">
-                    <p>Rental Cars</p>
+                    <p><a>Rental Cars</a></p>
                 </div>
                 <div class="grid-item">
                     <img src="./img/download (4).png" alt="Image 6">
-                    <p>Long time Lease</p>
+                    <p><a>Long time Lease</a></p>
                 </div>
 
             </div>
             <button class="btn">Book Now</button>
         </div>
-        <div class="reviews">
+        <div class="reviews" id="reviews">
             <h1>Reviews from Our Travellers</h1>
             <hr>
             <div class="slider-wrapper">
@@ -242,7 +247,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
+        <div class="footer" id="footer">
             <div class="address">
                 <h2>
                     <u>Our Office address</u></h2>
@@ -333,6 +338,18 @@
             }
         });
     }
+
+    document.getElementById('showContentBtn').addEventListener('click', function() {
+        var content = document.getElementById('hiddenContent');
+        var bttn = document.getElementById('showContentBtn');
+        if (content.style.display === "none") {
+            content.style.display = "block";
+            bttn.style.display = "none";
+        } else {
+            content.style.display = "none";
+            bttn.style.display = "block";
+        }
+    });
 </script>
 
 </html>
