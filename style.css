@@ -237,14 +237,16 @@
         
         .features h1,
         h2,
-        .reviews h1 {
+        .reviews h1,
+        .types h1 {
             padding: 10px;
             margin-top: 20px;
             color: #5c0b1c;
         }
         
         .features hr,
-        .reviews hr {
+        .reviews hr,
+        .types hr {
             width: 26%;
         }
         
@@ -277,6 +279,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
         }
         
         .slider-wrapper {
@@ -290,7 +293,6 @@
             display: flex;
             overflow: hidden;
             width: 700px;
-            /* Adjust to show 2 cards at a time */
             margin: auto;
         }
         
@@ -330,6 +332,62 @@
         
         .reviews .card p {
             color: #5c0b1c;
+        }
+        
+        .types {
+            margin: 30px;
+            margin-top: 60px;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .car-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            margin: 20px;
+            /* Adjust the space between cards */
+            padding: 20px;
+        }
+        
+        .car {
+            width: 300px;
+            /* Adjust based on your preference */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Simple shadow for depth */
+            border-radius: 10px;
+            /* Rounded corners for aesthetics */
+            overflow: hidden;
+            /* Ensures the image and text align with the card's border-radius */
+            height: 300px;
+        }
+        
+        .car p {
+            font-size: 22px;
+            background-color: #741125;
+            color: #ddd;
+            padding: 10px;
+        }
+        
+        .car img {
+            width: 100%;
+            /* Makes image fill the card */
+            height: 250px;
+            /* Maintains aspect ratio */
+            display: block;
+            /* Removes bottom space/margin under the image */
+            background-color: white;
+        }
+        
+        .card p {
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+            background-color: #f1f1f1;
+            /* Light grey background for the text */
+            color: #333;
+            /* Dark grey text color */
         }
         /*Responsive*/
         
