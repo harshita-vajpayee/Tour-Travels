@@ -15,9 +15,10 @@
     width: 100%;
     background-color: #911e2f;
     color: white;
-    padding-top: 0;
+    padding-top: 1px;
     padding-left: 10px;
     padding-right: 20px;
+    padding-bottom: 1px;
 }
 
 .logo img {
@@ -108,4 +109,36 @@
 
 body {
     padding-top: 60px;
+    background-color: #e7d9df;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 60px;
+    background-image: linear-gradient(#5c0b1c, #5c0b1c, #5c0b1c, #741125, #8f2b37, #932d3a);
+    color: white;
+}
+
+.text-content {
+    flex: 1;
+    /* Allows the text content to grow and fill the space */
+    padding-right: 20px;
+    /* Adds some space between the text and the image */
+}
+
+.image-content img {
+    width: auto;
+    /* Keeps image aspect ratio */
+    height: 100%;
+    /* Adjust the height as needed, or use 'auto' to maintain aspect ratio */
+    max-width: 80%;
+    /* Limits image size to not take more than half the container */
+}
+
+.text-content p {
+    padding: 20px;
+    font-size: 20px;
 }
