@@ -603,39 +603,10 @@ footer {
 
 /*Responsive*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 460px) {
     html {
         scroll-behavior: smooth;
-    }
-    .nav-links,
-    .dropdown-content {
-        width: 100%;
-        text-align: center;
-        padding: 0;
-    }
-    .nav-links a,
-    .dropdown-content a {
-        display: block;
-        text-align: center;
-    }
-    .nav-button {
-        width: 100%;
-        margin-right: 0;
-        margin: 0;
-    }
-    .icon {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        padding: 20px;
-    }
-    .image-content img {
-        width: 70%;
-        /* Keeps image aspect ratio */
-        height: auto;
-        /* Adjust the height as needed, or use 'auto' to maintain aspect ratio */
-        /* Limits image size to not take more than half the container */
+        max-width: 400px;
     }
     .about,
     .aboutus,
@@ -643,13 +614,10 @@ footer {
     .reviews {
         padding: 0;
         margin: 0;
+        font-size: 55%;
     }
     .navbar {
         position: relative;
-    }
-    body {
-        font-size: 55%;
-        overflow: hidden;
     }
     .grid-container,
     .car-container,
@@ -659,10 +627,10 @@ footer {
     .home {
         flex-direction: column;
     }
-    .form {
-        width: 60%;
-    }
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .form {
+        width: 60%;
     }
 }
