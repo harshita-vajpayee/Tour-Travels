@@ -636,11 +636,19 @@ footer {
     .map img {
         width: 70%;
     }
-    .footer {
-        margin-bottom: 0;
-    }
+    .footer,
     footer {
-        margin-top: 0;
+        margin: 0;
+    }
+    .col1,
+    .col2,
+    .col3,
+    .address,
+    .map,
+    .form,
+    .form-group {
+        margin: 0px;
+        gap: 0px;
     }
     .card {
         width: 400px;
@@ -657,7 +665,5 @@ footer {
     #prev,
     #next {
         display: none;
-        left: 0;
-        right: 0;
     }
 }
