@@ -636,4 +636,10 @@ footer {
     .map img {
         width: 70%;
     }
+    .footer {
+        margin-bottom: 0;
+    }
+    footer {
+        margin-top: 0;
+    }
 }
