@@ -640,6 +640,7 @@ footer {
     footer {
         margin: 0;
         gap: 0;
+        padding: 10px;
     }
     .col1,
     .col2,
