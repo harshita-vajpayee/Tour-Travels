@@ -14,7 +14,9 @@
 <body>
     <nav class="navbar">
         <div class="logo"><img src="./img/product-jpeg.jpg"> </div>
-
+        <div class="menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
         <div class="nav-links">
             <a href="#">Home</a>
             <a href="#aboutus">About Us</a>
@@ -248,9 +250,7 @@
                 <div class="col3">
                     <h3>Taxi from Mumbai
                     </h3>
-
                     <p>Mumbai to Goa</p>
-
                     <p>Mumbai to Vadodra</p>
                     <p>Mumbai to Ahmedabad</p>
                     <p>Mumbai to Indore</p>
@@ -384,6 +384,26 @@
     document.getElementById("booknw").onclick = function() {
         location.href = "#footer";
     };
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+        const navButton = document.querySelector('.nav-button');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+
+        });
+        dropbtn.addEventListener('click', function() {
+            this.nextElementSibling.classList.toggle('show');
+        });
+        const dropdown = document.addEventListener("dropbtn");
+        dropdown.addEventListener('click', () => {
+            const drop = document.querySelector('.dropdown-content');
+            drop.classList.toggle('active');
+        })
+    });
 </script>
 
 </html>
