@@ -645,4 +645,17 @@ footer {
     .card {
         width: 400px;
     }
+    .slider-wrapper {
+        margin: 0;
+        padding: 0;
+        left: 0;
+    }
+    #slider-container {
+        width: 60%;
+        padding-bottom: 0;
+    }
+    #prev,
+    #next {
+        display: none;
+    }
 }
