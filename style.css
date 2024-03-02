@@ -657,5 +657,6 @@ footer {
     #prev,
     #next {
         display: none;
+        left: 0;
     }
 }
