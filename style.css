@@ -633,4 +633,7 @@ footer {
     .form {
         width: 60%;
     }
+    .map img {
+        width: 60%;
+    }
 }
