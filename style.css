@@ -642,4 +642,7 @@ footer {
     footer {
         margin-top: 0;
     }
+    .card {
+        width: 400px;
+    }
 }
