@@ -622,6 +622,7 @@ footer {
     footer,
     .home {
         flex-direction: column;
+        text-align: left;
     }
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
