@@ -619,18 +619,13 @@ footer {
     }
     .dropdown-content {
         display: none;
-        /* Keep it hidden by default */
         position: static;
-        /* Change if necessary for layout */
         width: 100%;
-        /* Ensure full width within dropdown */
         box-shadow: none;
-        /* Optional: remove shadow if it doesn't fit the design */
     }
     .dropdown:hover .dropdown-content,
     .dropdown:focus-within .dropdown-content {
         display: block;
-        /* Show dropdown content on hover or focus */
     }
     .map img {
         width: 90%;
@@ -746,5 +741,11 @@ footer {
     .map {
         padding: 10px;
         gap: 10px;
+    }
+    .about,
+    .aboutus {
+        text-align: left;
+        margin-right: 0;
+        padding-right: 0;
     }
 }
