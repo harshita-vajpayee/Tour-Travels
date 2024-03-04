@@ -747,6 +747,7 @@ footer {
         padding-right: 0;
         justify-content: left;
         max-width: 400px;
+        font-size: 110%;
     }
     .about h1 {
         font-size: 160%;
