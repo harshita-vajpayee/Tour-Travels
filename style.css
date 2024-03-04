@@ -712,6 +712,9 @@ footer {
         margin: auto;
         font-size: 75%;
     }
+    .aboutus .text-content {
+        padding-right: 0;
+    }
     .navbar {
         position: relative;
         padding: 0;
