@@ -730,6 +730,26 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    .slider-wrapper {
+        width: 97%;
+    }
+    #slider-container {
+        width: 370px;
+        padding: 0;
+    }
+    .card {
+        padding: 0;
+    }
+    #prevBtn {
+        left: -10px;
+        padding: 0;
+        margin: 0;
+    }
+    #nextBtn {
+        right: -25px;
+        padding: 0;
+        margin: 0;
+    }
     .car {
         width: 80%;
         height: auto;
