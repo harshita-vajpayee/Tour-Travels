@@ -741,7 +741,7 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
     .form {
-        width: 60%;
+        width: 80%;
         gap: 10px;
     }
     .map img {
@@ -779,7 +779,7 @@ footer {
         display: none;
     }
     .route-box {
-        font-size: 80%;
+        font-size: 70%;
     }
     .collapsible {
         font-size: 18px;
@@ -805,6 +805,9 @@ footer {
     }
     .about h1 {
         font-size: 160%;
+    }
+    .form h2 {
+        text-align: center;
     }
     footer {
         gap: 10px;
