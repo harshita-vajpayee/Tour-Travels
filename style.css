@@ -743,11 +743,8 @@ footer {
         gap: 10px;
     }
     .about .text-content {
-        margin-right: 0;
-        padding-right: 0;
         justify-content: left;
         max-width: 400px;
-        font-size: 70%;
     }
     .about h1 {
         font-size: 160%;
