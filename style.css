@@ -744,8 +744,8 @@ footer {
     }
     .about,
     .aboutus {
-        text-align: left;
         margin-right: 0;
         padding-right: 0;
+        justify-content: left;
     }
 }
