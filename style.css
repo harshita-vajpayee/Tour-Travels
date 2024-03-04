@@ -625,7 +625,8 @@ footer {
         z-index: 100;
     }
     .nav-links a,
-    .nav-button.active {
+    .nav-button.active,
+    .nav-links .dropdown {
         display: block;
         text-align: center;
         padding: 10px;
