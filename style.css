@@ -778,6 +778,9 @@ footer {
     #next {
         display: none;
     }
+    .route-box {
+        font-size: 80%;
+    }
     .collapsible {
         font-size: 18px;
     }
