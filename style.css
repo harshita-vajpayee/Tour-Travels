@@ -742,10 +742,13 @@ footer {
         padding: 10px;
         gap: 10px;
     }
-    .about p {
+    .about .text-content {
         margin-right: 0;
         padding-right: 0;
         justify-content: left;
         max-width: 400px;
+    }
+    .about h1 {
+        font-size: 97%;
     }
 }
