@@ -885,10 +885,10 @@ footer {
     #next {
         display: none;
     }
-    .route-box h2 {
+    .routebox h2 {
         font-size: 24px;
     }
-    .route-box p {
+    .routebox p {
         font-size: 20px;
     }
     .collapsible {
