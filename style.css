@@ -755,6 +755,10 @@ footer {
     .card {
         padding: 0;
     }
+    .about .text-content p {
+        text-align: left;
+        word-spacing: normal;
+    }
     #prevBtn {
         left: -10px;
         padding: 0;
