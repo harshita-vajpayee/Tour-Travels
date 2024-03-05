@@ -774,6 +774,9 @@ footer {
         margin: auto;
         padding-top: 0px;
     }
+    .btn {
+        margin-left: 50px;
+    }
     .home img {
         padding-top: 25px;
         width: 90%;
