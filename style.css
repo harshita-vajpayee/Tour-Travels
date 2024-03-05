@@ -885,6 +885,9 @@ footer {
     #next {
         display: none;
     }
+    .routebox {
+        align-self: center;
+    }
     .routebox h3 {
         font-size: 24px;
         text-align: left;
