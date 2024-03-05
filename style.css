@@ -8,6 +8,14 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    padding-top: 60px;
+    background-color: #e7d9df;
+}
+
+
+/*navigation start*/
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -63,7 +71,6 @@ html {
 .dropbtn:hover,
 .dropdown-content a:hover {
     color: rgb(236, 236, 3);
-    /* Change text color to yellow on hover */
 }
 
 .dropdown {
@@ -111,10 +118,11 @@ html {
     display: none;
 }
 
-body {
-    padding-top: 60px;
-    background-color: #e7d9df;
-}
+
+/*navigation end*/
+
+
+/*home page and .about start*/
 
 .home {
     display: flex;
@@ -180,6 +188,9 @@ hr {
     text-align: justify;
 }
 
+
+/*home page and .about end*/
+
 .btn {
     background-color: rgb(219, 187, 3);
     color: #741125;
@@ -199,6 +210,9 @@ hr {
     border: 2px solid white;
     color: #ddd;
 }
+
+
+/*about us start*/
 
 .aboutus {
     margin: 30px;
@@ -226,6 +240,15 @@ h2 {
     max-width: 800px;
     text-align: justify;
 }
+
+
+/*about us start*/
+
+
+/*features or services start*/
+
+
+/*reviews,types and faqs simple structure*/
 
 .features,
 .faqs {
@@ -281,6 +304,12 @@ h2,
     font-weight: bold;
     cursor: pointer;
 }
+
+
+/*features or services start*/
+
+
+/*reviews start*/
 
 .reviews {
     margin: 30px;
@@ -342,6 +371,12 @@ h2,
     color: #5c0b1c;
 }
 
+
+/*reviews end*/
+
+
+/*types start*/
+
 .types,
 .routes {
     margin: 30px;
@@ -394,6 +429,12 @@ h2,
     /* Dark grey text color */
 }
 
+
+/*types end*/
+
+
+/*faqs start*/
+
 .faqbox {
     margin-top: 20px;
     display: flex;
@@ -441,6 +482,12 @@ h2,
     border: 0.2px solid black;
 }
 
+
+/*faqs start*/
+
+
+/*routes start*/
+
 .footer,
 .routebox {
     margin: 10px;
@@ -462,6 +509,12 @@ h2,
     text-align: left;
     font-size: 20px;
 }
+
+
+/*routes start*/
+
+
+/*.footer i.e. first footer start*/
 
 .footer {
     background-color: #741125;
@@ -546,6 +599,12 @@ button[type="submit"]:hover {
     height: auto;
 }
 
+
+/*.footer i.e. first footer end*/
+
+
+/*footer start*/
+
 footer {
     background-color: #741125;
     color: #ddd;
@@ -574,6 +633,9 @@ footer {
 .footer-menu a:hover {
     color: #c7940a;
 }
+
+
+/*footer start*/
 
 
 /* Responsive adjustments */
@@ -758,6 +820,7 @@ footer {
     .about .text-content p {
         text-align: left;
         word-spacing: normal;
+        font-size: 20px;
     }
     #prevBtn {
         left: -10px;
