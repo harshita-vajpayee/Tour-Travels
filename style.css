@@ -820,7 +820,9 @@ footer {
     .about .text-content p {
         text-align: left;
         word-spacing: normal;
-        font-size: 20px;
+        font-size: 18px;
+        margin-right: 0;
+        padding-right: 0;
     }
     #prevBtn {
         left: -10px;
