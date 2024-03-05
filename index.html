@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title> Imandar Tours and Travels</title>
 </head>
 
@@ -407,6 +408,20 @@
             const drop = document.querySelector('.dropdown-content');
             drop.classList.toggle('active');
         })
+    });
+</script>
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        // Assume you're using AJAX/Fetch to submit the form data here...
+        // After successful submission:
+        Swal.fire({
+            title: 'Success!',
+            text: 'Your form has been submitted.',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
     });
 </script>
 
