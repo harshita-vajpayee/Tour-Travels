@@ -887,9 +887,11 @@ footer {
     }
     .routebox h3 {
         font-size: 24px;
+        text-align: left;
     }
     .routebox p {
         font-size: 20px;
+        text-align: left;
     }
     .collapsible {
         font-size: 18px;
