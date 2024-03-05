@@ -37,7 +37,8 @@
             <a href="#">Blogs</a>
             <a href="#footer">Contact</a>
         </div>
-        <button class="nav-button"><i class="fa fa-phone" style="font-size:18px;color: white;"></i>+919137372136</button>
+        <button class="nav-button" id="copyButton" onclick="copyTextToClipboard()"><i class="fa fa-phone" style="font-size:18px;color: white;"></i>+919137372136</button>
+
     </nav>
     <div class="container">
         <div class="home" id="home">
@@ -49,6 +50,7 @@
             <div class="image-content">
                 <img src="./img/car-rental-india-800x445.webp_2024-03-01T08_19_35.733Z_output_0.jpeg" alt="Descriptive Text for Image">
             </div>
+
         </div>
         <div class="about">
             <h1>Best Taxi Service in Mumbai and Maharashtra !</h1>
@@ -423,6 +425,23 @@
             confirmButtonText: 'OK'
         });
     });
+
+    function copyTextToClipboard() {
+        var textToCopy = "+919137372136"; // The phone number you want to copy
+
+        navigator.clipboard.writeText(textToCopy).then(function() {
+            // Change the button text upon successful copy
+            var button = document.getElementById('copyButton');
+            button.innerHTML = "Number copied"; // Change button text and icon
+
+            // Optionally, revert back to the original text after a few seconds
+            setTimeout(function() {
+                button.innerHTML = '<i class="fa fa-phone" style="font-size:18px;color: white;"></i>+919137372136';
+            }, 2000); // 2 seconds delay
+        }, function(err) {
+            console.error('Could not copy text: ', err);
+        });
+    }
 </script>
 
 </html>
