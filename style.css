@@ -541,6 +541,16 @@ h2,
     line-height: 1.5;
 }
 
+div.social {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.8em;
+    flex-direction: row;
+    margin-top: 0.5em;
+    gap: 0.5rem;
+    margin-left: 10px;
+}
+
 .form {
     width: 100%;
     max-width: 300px;
@@ -779,7 +789,7 @@ footer {
     }
     .home img {
         padding-top: 25px;
-        width: 70%;
+        width: 80%;
         padding-left: 20px;
     }
     .about,
