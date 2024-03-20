@@ -18,6 +18,7 @@ This project involves creating a website for our client, Imaandar Tour and Trave
 ## Deployment
 
 The website is live now !!
+Click on this link to visit the website:
 [Imaandar Tour & Travellers](http://imandaartourandtravels.com/)
 
 
