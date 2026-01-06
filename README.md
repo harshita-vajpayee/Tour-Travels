@@ -20,7 +20,7 @@ This project involves creating a website for our client, Imaandar Tour and Trave
 The website is live now !!
 Click on this link to visit the website:
 [Imaandar Tour & Travellers](http://imandaartourandtravels.com/)
-[Vercel Deployment](https://tour-travels-2rgxskvcz-harshita-vajpayees-projects.vercel.app)
+[Vercel Deployment](https://tour-travels-mu.vercel.app/)
 
 
 ## Authors
